@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "862222110103",
+    "project_id": "gayting-186b7",
+    "storage_bucket": "gayting-186b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862222110103:android:b95c7cee2ae91b337808d2",
+        "android_client_info": {
+          "package_name": "io.twotle.gayting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862222110103-jul6brb71njqp2ehlfmesshtelg1efvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxoFh6oTVAwuq-RqvKgJt7SMDd0RvZ5DE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862222110103-jul6brb71njqp2ehlfmesshtelg1efvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
