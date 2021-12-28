@@ -11,15 +11,18 @@
         android:theme="@style/Theme.Gayting">
         <activity
             android:name=".presentation.auth.LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".presentation.main.MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".presentation.main.MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
