@@ -16,14 +16,14 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/userGenderCard"
             android:layout_width="300dp"
-            android:layout_height="350dp"
+            android:layout_height="650dp"
             app:cardCornerRadius="20dp"
-            android:layout_marginTop="30dp"
             android:layout_gravity="center"
             app:cardUseCompatPadding="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -31,7 +31,7 @@
                 <ImageView
                     android:layout_width="300dp"
                     android:layout_height="0dp"
-                    android:layout_weight="0.8"
+                    android:layout_weight="0.5"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_youngman"/>
                 <TextView
@@ -39,52 +39,72 @@
                     android:id="@+id/userName"
                     android:layout_width="300dp"
                     android:layout_height="0dp"
-                    android:layout_weight="0.2"
+                    android:layout_weight="0.1"
                     android:text="userName"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/userJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="직업 : 영진이 귀요미"
+                    android:layout_weight="0.05"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    />
+
+                <TextView
+                    android:id="@+id/userPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전화번호 : 01063947417"
+                    android:layout_weight="0.05"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일 : kiyo2tle@gmail.com"
+                    android:layout_weight="0.05"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/userHobby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="취미 : 현준이이와 카포에이라 한판"
+                    android:layout_weight="0.05"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/userResidence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="거주지 : 서울역 4번출구옆 박스"
+                    android:layout_weight="0.05"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"/>
+
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/userGenderCard">
-            <TextView
-                android:id="@+id/userJob"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="userJob"/>
-
-            <TextView
-                android:id="@+id/userPhoneNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="userJob"/>
-
-            <TextView
-                android:id="@+id/userEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="userEmail"/>
-
-            <TextView
-                android:id="@+id/userHobby"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="userHobby"/>
-
-            <TextView
-                android:id="@+id/userResidence"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="userResidence"/>
-
-
-
-        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

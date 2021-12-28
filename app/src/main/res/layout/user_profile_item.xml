@@ -31,7 +31,9 @@
                 android:layout_height="0dp"
                 android:layout_weight="0.3"
                 android:text="userName"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"/>
 
         </LinearLayout>
 
