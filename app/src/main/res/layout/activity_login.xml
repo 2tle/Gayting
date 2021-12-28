@@ -13,32 +13,73 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".presentation.auth.LoginActivity">
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/et_password"
-            android:text="@={loginVm.email}"
-            android:id="@+id/et_email"/>
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_email"
-            android:text="@={loginVm.pw}"
-            android:id="@+id/et_password"
-            android:inputType="textPassword"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bt_login"
-            android:onClick="@{(v) -> loginVm.login()}"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+        tools:context=".presentation.auth.LoginActivity"
+        android:background="@drawable/ic_fingerbackground2">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/layoutround"
+            app:layout_constraintCircleRadius="20dp"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gayting"
+                android:textSize="50dp"
+                android:textColor="#A53333"
+                android:gravity="center"
+                android:layout_marginTop="30dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:endIconMode="clear_text"
+                android:layout_marginTop="30dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@={loginVm.email}"
+                    android:id="@+id/et_email"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:endIconMode="password_toggle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@={loginVm.pw}"
+                    android:id="@+id/et_password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_login"
+                android:onClick="@{(v) -> loginVm.login()}"
+                android:background="@drawable/loginbuttonradius"
+                android:text="login"
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="50dp"/>
+
+        </LinearLayout>
 
 
 
