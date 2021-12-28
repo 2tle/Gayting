@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gayting">
         <activity
+            android:name=".presentation.auth.LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".presentation.main.MainActivity"
             android:exported="true">
             <intent-filter>
